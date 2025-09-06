@@ -1,0 +1,144 @@
+{
+  "Routes": [
+    {
+      // Product Web API
+      "UpstreamPathTemplate": "/api/ProductApi",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+
+      "DownstreamScheme": "http",
+      "ServiceName": "productapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productapi",
+          "Port": 8004
+          //"Port": 80
+          //"Host": "localhost",
+          //"Port": 5111
+
+        }
+      ],
+      "DownstreamPathTemplate": "/api/ProductApi"
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductApi/{id}",
+      "UpstreamHttpMethod": [ "Get", "Put", "Delete" ],
+
+      "DownstreamScheme": "http",
+      "ServiceName": "productapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "productapi",
+          //"Port": 80
+          "Port": 8004
+          //"Host": "localhost",
+          //"Port": 5111
+
+        }
+      ],
+      "DownstreamPathTemplate": "/api/ProductApi/{id}"
+    },
+
+    //Authourization web Api
+    {
+      "UpstreamPathTemplate": "/api/auth/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "authourizationapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authourizationapi",
+          //"Port": 80
+          "Port": 8113
+        }
+      ],
+      "DownstreamPathTemplate": "/api/auth/register"
+    },
+    {
+      "UpstreamPathTemplate": "/api/auth/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "authourizationapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authourizationapi",
+          //"Port": 80
+          "Port": 8113
+        }
+      ],
+      "DownstreamPathTemplate": "/api/auth/login"
+    },
+    {
+      "UpstreamPathTemplate": "/api/auth/assign-role",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "authourizationapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authourizationapi",
+          //"Port": 80
+          "Port": 8113
+        }
+      ],
+      "DownstreamPathTemplate": "/api/auth/assign-role"
+    },
+
+
+    // CartApi web Api
+    {
+      "UpstreamPathTemplate": "/api/CartApi",
+      "UpstreamHttpMethod": [ "Post", "Get" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "cartapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cartapi",
+          //"Port": 80
+          "Port": 8002
+        }
+      ],
+      "DownstreamPathTemplate": "/api/CartApi"
+    },
+    {
+      "UpstreamPathTemplate": "/api/CartApi/get-user-cart",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "cartapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cartapi",
+          //"Port": 80
+          "Port": 8002
+        }
+      ],
+      "DownstreamPathTemplate": "/api/CartApi/get-user-cart"
+    },
+    {
+      "UpstreamPathTemplate": "/api/CartApi/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "ServiceName": "cartapi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cartapi",
+          //"Port": 80
+          "Port": 8002
+        }
+      ],
+      "DownstreamPathTemplate": "/api/CartApi/{id}"
+    }
+    // CartApi ends
+
+  ],
+
+  "GlobalConfiguration": {
+    "UseServiceDiscovery": true,
+    "ServiceDiscoveryProvider": {
+      "Type": "Eureka",
+      "Host": "http://eureka-server:8761/eureka/"
+    },
+    "BaseUrl": "http://localhost:8005"
+  }
+
+
+
+}

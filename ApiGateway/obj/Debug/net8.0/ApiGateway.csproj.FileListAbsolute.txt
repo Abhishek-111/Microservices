@@ -1,0 +1,9 @@
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.csproj.AssemblyReference.cache
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.AssemblyInfoInputs.cache
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.AssemblyInfo.cs
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.csproj.CoreCompileInputs.cache
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\abhis\OneDrive\Documents\DotNet\Projects\Microservices\Microservices\WebApplication1\ApiGateway\obj\Debug\net8.0\ApiGateway.sourcelink.json
